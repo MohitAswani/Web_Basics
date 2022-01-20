@@ -1,0 +1,38 @@
+/*
+
+CSS display property is used to determine whether an element is treated as a block element and layout used for its childern.
+
+display:inline; will make the element take only the space requirred by it. No linebreaks before and after. Setting width,height, top/bottom margin, top/bottom padding not allowed. 
+
+Span is by default inline element.
+
+display:block; takes full space available in width and leave a newline before and after the element.
+
+div is by default inline element.
+
+display:inline-block; similiar to inline (side by side elements) but setting width,height, margin, padding is allowed.
+
+display:none; the element is removed from the document flow. Its space is not blocked.
+
+visiblity:hidden; the element is hidden but its space is reserved.
+
+text-align property is used to set the horizontal alignment of the text in element. This will not align the container/element.
+
+
+
+*/
+.box1{
+    width: 400px;
+    height: 300px;
+    background-color: red;
+    display: inline-block;
+    /* visibility: collapse; */
+    text-align: center;
+}
+.box2{
+    width: 400px;
+    height: 300px;
+    background-color: blue;
+    display: inline-block;
+    text-align: right;
+}

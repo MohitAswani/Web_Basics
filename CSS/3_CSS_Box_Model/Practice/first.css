@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*
+
+vh - is a unit of measure called viewport height based on the device
+
+*/
+header{
+    height: 30vh;
+    background-color: red;
+    margin: 20px;
+    border: 2px solid black;
+    padding: 20px;
+}
+.content{
+    height: 10vh;
+    background-color: yellow;
+    margin: 20px;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: content;
+}
+footer{
+    height: 30vh;
+    background-color: green;
+    margin: 20px;
+    border: 2px solid black;
+    padding: 20px;
+}
+/*
+
+To align the text in the middle we use the text-align property.
+*/
+
+.center{
+    text-align: center;
+}

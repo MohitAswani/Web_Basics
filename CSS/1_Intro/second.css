@@ -1,0 +1,56 @@
+/*
+
+CSS selector : it is used to select an HTML element or elements for styling.
+
+For example : in the below h1 is a selector and colr:red; is an declaration. 
+And since we use h1 as an selector hence it will style every h1 element like that.
+
+Whenver we use an HTML element tag to select those elements in the file it is called element selector.
+
+Whenver we use an HTML element id to select a particular element it is called id selector. 
+Eg: #id{}
+
+Whenver we use an HTML element of a class to select a particular elements of a class it is called class selector. 
+Eg: .class{}
+
+*/
+h1{
+    color:red;
+}
+div{
+    background-color: blueviolet;
+}
+#red,h5{
+    background-color: bisque;
+    color:red;
+}
+/*
+ We can use comma to group multiple selectors
+*/
+.blue,h3,h4{
+    background-color:blue;
+    color:white;
+    border:4px solid black;
+}
+/*
+ For all paragraphs of class red
+*/
+p.red{
+    background-color: yellow;
+}
+/*
+ For all paragraphs of id green
+
+ For a CSS rule to act it an element must satisfy that rule
+*/
+p#green{
+    background-color: green;
+}
+/*
+
+* can be used as an universal selector
+
+*/
+*{
+    padding: 0.5%;
+}

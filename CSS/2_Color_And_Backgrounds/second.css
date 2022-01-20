@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*
+
+The following is how we set up background image of any HTML element.
+
+And we control the repeating nature of background image by background-repeat property. This property can have three imp values : 
+
+1) repeat-x : repeat the image in x
+
+2) repeat-y : repeat the image in y
+
+3) no-repeat : dont repeat the image
+
+Another important property is the background-size property . It can have the following properties :
+
+1) Cover : fits and no empty space remains.
+
+2) Contain : fits and image is fully visible but might leave some empty spaces.
+
+3) Auto : display in original size.
+
+4) {{width}}: set width and the height will be set automatically.
+
+4) {{width}}{{height}}: set width and set height
+
+Best way to search for a css property is to search for MDN docs.
+
+Background position property the position of the background image within the element.
+
+Eg: top left , bottom right 
+
+For background position top left is equal to left top
+
+The background-attachment CSS property sets whether a background image's position is fixed within the viewport, or scrolls with its containing block. Some values of this property are :
+
+1)scroll 
+2)fixed
+3)local 
+
+*/
+.container{
+    width: 400px;
+    height: 400px;
+    border:10px solid blue;
+    color: white;
+    background-image: url("img2.jpg");
+    background-repeat: no-repeat;
+    background-size:500px;
+    /* background-position: top left; */
+    background-attachment:fixed;
+}
+.shorthand{
+    width: 400px;
+    height: 400px;
+    border:10px solid blue;
+    color: white;
+    background: url('img2.jpg') no-repeat local;
+}

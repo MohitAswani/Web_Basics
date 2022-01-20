@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: blue;
+    color: white;
+    width: 50vh;
+    height: 50vh;
+}
+.items{
+    font-size:xx-large;
+}
+body{
+    background-color: red;
+}
+div{
+    width: 500px;
+    height: 600px;
+    color: white;
+    border: 2px solid yellow;
+    background-image: url("img3.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-color: yellow; */
+    background-attachment: fixed;
+    /* background: url(img3.jpg) no-repeat fixed; */
+}

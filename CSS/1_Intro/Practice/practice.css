@@ -1,0 +1,22 @@
+*{
+    font-size: xx-large;
+}
+div.red{
+    background-color: red;
+    color: white;
+}
+#head{
+    background-color: aqua;
+}
+.one{
+    background-color: blueviolet;
+}
+.two{
+    color:blueviolet;
+}
+.three{
+    font-style: italic;
+}
+.four{
+    padding: 1%;
+}

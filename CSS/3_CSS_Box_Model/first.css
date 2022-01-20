@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*
+
+Total height of any element = height + top/bottom padding + top/bottom border + top/bottom margin.
+
+*/
+.content{
+    height:97px;
+    width: 350px;
+    background: red;
+    margin: 10px; 
+    padding: 50px;
+    /* 
+    top-right-bottom-left for 4 values 
+    top-bottom right-left for 2 values 
+    */
+    
+    border-width: 10px;
+    border-style:dashed;
+    border-color: aqua;
+    border-radius: 50px;
+
+    /*
+    We can either set the border as "4px solid black"
+
+    OR
+
+    We can either set it seperately as the above
+
+    For deeper knowledge refer the MDN docs
+    
+    */
+}
+/*
+
+When the margins of two elements collapse that concept is called margin collapse and the greater of the two margin is considered as the margin between the two and the smaller margin is ignored.
+
+*/
+.content_1{
+    height:97px;
+    width: 350px;
+    background: green;
+    margin: 10px; 
+    padding: 50px;
+    border-width: 10px;
+    border-style:dashed;
+    border-color: aqua;
+    border-radius: 50px;
+
+    /*
+    Through box-sizing we can determine whether the height of the element considers only the content or it included content+border+padding
+
+    box-sizing: border-box; will consider the content+border+padding as the box size
+
+    box-sizing: content-box; will consider as the content height as the height of the box
+
+    by default box-sizing is content-box
+
+    */
+    box-sizing: content-box;
+}

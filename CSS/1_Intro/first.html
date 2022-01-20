@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+        To address an element with id we use #id of that element
+    
+        To address a class of element we use .class
+    -->
+
+    <!-- <style>
+        #first{
+            background-color: blue;
+        }
+        .red{
+            background-color: red;
+            color: white;
+        }
+        body{
+            background-color: aqua;
+        }
+    </style> -->
+
+    <link rel="stylesheet" href="first.css">
+
+</head>
+<body>
+
+    <!-- 
+        DOM stands for document object model and a DOM is created for a web page wheneven we open that web page 
+        in a browser. Also DOM is a tree of objects (HTML elements).
+
+        ID in HTML is an unique identifier for that element and more than one element cannot have the same id. Hence if an
+        element is assigned an id it must have an unique id.
+        Shortcut : element#id
+
+        Class in HTML is not an unique identifier rather it is used to group elements. Hence more than one element can have 
+        the same class and a single element can have multiple classes.
+        Shortcut : element.class
+
+        Ways to add css to our HTML : 
+
+        1) <style> tag : adding <style> tag in the head.
+
+        2) Inline css : adding style attribute to each element but this method is very hectic and hard to maintain
+
+        3) Externel css : adding a stylesheet to html using <link> tag.
+    
+        Inline style will overide external and style tag.
+    -->
+
+    <!-- <div id="first" style="background-color: red; color: white;">first</div> -->
+
+    <div id="second">second</div>
+
+    <div class="red">red</div>
+    
+    <section class="red">red</section>
+
+    <section class="red">red</section>
+
+    <section class="red bg-blue">red bg-blue</section>
+
+</body>
+</html>
