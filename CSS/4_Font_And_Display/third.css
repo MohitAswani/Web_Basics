@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*
+
+font-weight : determines the thickness of the font.
+
+generic-family : broad class of similiar fonts eg : serif,sans-serif. Eg: fruit is a generic name for banana,apples and oranges etc.
+
+font-familty : talks about a specific font.
+*/
+h3{
+    font-size: 48px;
+    font-style: italic;
+    font-variant:unset;
+    font-weight: 100;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}

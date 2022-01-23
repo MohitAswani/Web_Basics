@@ -1,0 +1,29 @@
+/*
+
+text-decoration : is used to decorate a text.
+
+Usually we should not underline our text since the user might consider that text as a clickable link.
+
+line-height : this sets the height of a single line
+
+font-size : determines the size of the font 
+
+font-family : determines the type of font on the website. And there are mutliple font option so that if one font is not able to render the other one is selected. The text with space have inverted commas.
+
+We add any font we want from google fonts by using the link and then using the css style given below the link.
+
+Web safe fonts : these are the fonts which are universally install accross browsers.
+
+*/
+p{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    color:white;
+    /* text-decoration:underline dotted wheat; */
+    text-transform: uppercase;
+    line-height: 2;
+    font-size: 25px;
+    /* font-family:'Courier New', Courier, monospace; */
+    font-family: 'Roboto', sans-serif;
+}
