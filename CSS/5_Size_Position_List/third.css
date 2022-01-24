@@ -6,19 +6,62 @@ Position property : used to manipulate the location of an element. Following are
 
 2) Relative : top/bottom/left/right/z-index will now work. Otherwise the element is in the flow of document like static. And on changing any of the above properties other elements do not move.
 
-3) Absolute : 
+3) Absolute : the element is removed from the flow and is relativity position to its first non-static ancestor .Also top/bottom works with respect to this non-static ancestor.
+
+If there is no non-static parent then element with be positioned with respect to the HTML tag. 
+
+But in most cases to adjust an element we make its parent non-static and position the element with absolute.
+
+4) Fixed : just like absolute but the positioning is with respect to the browser.
+
+Also in fixed positioning there is no effect of scroll on the element. This is used to make the element which we want on the page for all the time.
+
+5) Sticky : the element is position based on user's scroll position.
+
+This is used to make browser stay for all time during scroll.
+
+The z-index property specifies the stack order of an element. For z-index we must mention the position property and keep its value other than static.
+
+An element with greater stack order is always in front of an element with a lower stack order.
+
+List-style : determines what index will be there in the list.
+
+List-style has three properties within it :
+
+1) list-style-type
+
+2) list-style-position : inside means the bullet points are inside the ul and outside means outside the ul.
+
+3) list-style-image : use to add a image to list pointers.
+
+We can write all of them seperately or all of them together in the following order : 
+
+list-style : list-style-type list-style-position list-style-image
+
+
 */
 *{
     margin: 0;
     padding: 0;
 }
 li{
-    display: inline-block;
+    /* display: inline-block; */
+    margin: 50px;
+    list-style: square outside;
+}
+ul{
+    background-color: red;
+}
+body{
+    height: 4000px;
 }
 header{
     background-color: black;
     color: white;
     height: 5vh;
+    position: sticky;
+    top:0px;
+    z-index: 1;
 }
 p{
     text-align: center;
@@ -29,13 +72,19 @@ p{
     width: 50vw;
     margin: auto;
     background-color: aqua;
-    padding: 0px 34px
+    padding: 0px 34px;
+    position: relative;
+    z-index: 2;
 }
 .box1{
     height: 200px;
     width: 200px;
     background-color: yellow;
-    position: relative;
+    /* position: relative; */
+    /* position:absolute; */
+    position:fixed;
+    bottom:0px;
+    left:0px;
 }
 .box2{
     height: 200px;
