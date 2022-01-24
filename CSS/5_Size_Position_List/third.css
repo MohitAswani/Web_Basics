@@ -1,0 +1,45 @@
+/*
+
+Position property : used to manipulate the location of an element. Following are the possible values : 
+
+1) Static : the default value of position. Changing top/bottom/left/right/z-index has no effect.
+
+2) Relative : top/bottom/left/right/z-index will now work. Otherwise the element is in the flow of document like static. And on changing any of the above properties other elements do not move.
+
+3) Absolute : 
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: inline-block;
+}
+header{
+    background-color: black;
+    color: white;
+    height: 5vh;
+}
+p{
+    text-align: center;
+    border: 2px solid red;
+}
+.container{
+    height: 50vh;
+    width: 50vw;
+    margin: auto;
+    background-color: aqua;
+    padding: 0px 34px
+}
+.box1{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    position: relative;
+}
+.box2{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    position: relative;
+}

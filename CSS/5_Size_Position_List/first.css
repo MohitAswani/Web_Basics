@@ -1,0 +1,47 @@
+/*
+
+For a better user experience and good development experience we use units which are relative rather than using pixels which is a unit based on the device size.
+
+Relative length : unit which are relative to the other length property. Some relative lengths : 
+
+1) em : unit relative to the parent font size 
+
+2) rem : unit relative to the root font size
+
+(We use em,rem whenever we want to resize all the element with respect to one element)
+
+3) vh : unit relative to the 1% viewpost height
+
+4) vm : unit relative to the 1% viewpost width
+
+5) % : unit relative to the parent element
+
+*/
+/* html{
+    font-size: 15px;
+} */
+.content{
+    margin: 0;
+    padding: 0;
+    /* font-size: 34px; */
+}
+.box1{
+    /* font-size: 2em; This means 2X the size of the parent element */
+
+    /* font-size: 2rem; This means 2X the size of the root element */
+    background-color: red;
+}
+/*
+
+This means that the width of this element is 50% of the screen size width
+
+Similiarly this means that the height of this element is 50% of the screen size height
+
+We can use vw for height and vh for width but it doesn't make sense
+
+*/
+.box2{
+    background-color: aqua;
+    width: 50vw;  
+    height: 50vh;
+}

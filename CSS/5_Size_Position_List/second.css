@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+
+min-height/width : this sets the minimum height/width of the element.
+
+max-height/width : this sets the maximum height/width of the element.
+
+*/
+.container{
+    width:30vw;
+    height:50vh;
+    background-color: red;
+    min-height: 50vh;
+    max-height: 60vh;
+}
