@@ -73,7 +73,7 @@ p{
     margin: auto;
     background-color: aqua;
     padding: 0px 34px;
-    position: relative;
+    /* position: relative; */
     z-index: 2;
 }
 .box1{
