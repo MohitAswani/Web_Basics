@@ -1,0 +1,32 @@
+/*
+
+Float property : used to flow the element towards left/right.
+
+When we set the float property and if there is space the elements might become inline.
+
+Clear property : used to clear float property. It specifies what elements can float beside a given element.
+
+CLEAR ONLY CLEARS THE ELEMENTS BEFORE IT IN ORDER.
+
+Float and clear property do not provide a clear way to make our layouts. To solve this problem CSS flexbox was introduced.
+
+*/
+.box1{
+    height: 300px;
+    width:300px;
+    background-color: blue;
+    float:right;
+    /* clear:left;
+    clear:right;
+    
+    The above statements wont work on box2 since its below it in order.
+    */
+}
+.box2{
+    height: 300px;
+    width:300px;
+    background-color: red;
+    float:right;
+    clear: both;  /* Will clear all the elements on both right and left */
+
+}
