@@ -1,55 +1,44 @@
 /*
 
-CSS flexbox : provides us a better way to layout,align and distribute space among items in a container.
+FLEX PROPERTIES FOR CHILDREN/FLEX ITEMS :
 
-To initialize a flexbox we use display: flex;
+1) order : controls the order in which the items appear.
 
-There are two main access in flexbox 
+By default every elements order is 0.
 
-1) Main axis (horizontal  usually) : axis along which the items render. 
+2) Align self : Allows the default alignment along the cross axis to be overridden for individual flex items.
 
-2) Cross axis (vertical usually but not always) : axis perpendicular to main axis.
+But for this the elements must be counted as a single elements and hence the align-content must not be center.
 
+3) flex-grows : used to set the width with respect to other elements in the container. along the flex-direction. 
 
-FLEX PROPERTIES FOR PARENT/FLEX CONTAINER :
+But for this to work we must not set the width of the item.
 
-Flex direction : defines the direction towards which the items are laid can be row,row-reverse,column,column-reverse.
-
-We apply flex direction in flex container.
-
-Flex wrap : wraps items as needed. Can be wrap,nowrap,wrap-reverse.
-
-justify-content: used to align items along main axis. 'center' will center them horizontally.
-
-align-items : Aligns flex items along the cross axis of the current line of the flex container. 'center' will center them vertically.
-
-align-content : Aligns a flex-coontainers lines when there is extra space in the cross axis.
-
-
+4) flex-shrink : specifies how much a flex item will shrink relative to the rest of the flex items. Used when the items are overflowing from flex-container.
 
 */
 .container{
     height: 1000px;
     display: flex;
     background-color: aquamarine;
-    /* flex-direction: column-reverse; Elements render along cross axis in reverse direction */
-    /* flex-direction: row-reverse; */
     flex-direction: row;
-    /* flex-wrap: wrap-reverse; wraps the elements based on the screen size and wrap-reverse wraps the elements in reverse order */
     flex-wrap: wrap;
     justify-content: center;
     align-items:center;
-    align-content: center; /* Will treat the items as single entitiy and remove the spacing between element in cross axis */
 }
 .box1{
     height: 300px;
-    width:300px;
+    /* width:300px; */
     background-color: blue;
     border: 2px solid black;
+    order: 4; /* will be in the last */
+    /* align-self: flex-end; */
+    flex-grow: 4; 
 }
 .box2{
     height: 300px;
-    width:300px;
+    /* width:300px; */
     background-color: red;
     border: 2px solid black;
+    flex-grow: 1;
 }

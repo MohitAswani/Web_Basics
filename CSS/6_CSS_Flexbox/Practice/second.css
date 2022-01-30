@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position:sticky;
+    top:0px;
+}
+nav{
+    background-color: black;
+    color: white;
+}
+li{
+    display: inline-flex;
+    margin:2vw 5vw;
+    font-size: 3vh;
+}
+body{
+    height: 200vh;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box1{
+    background-color: aqua;
+    width: 20vw;
+    height: 100vh;
+    padding: 4vw;
+    justify-self: flex-end;
+}
+.box2{
+    background-color: green;
+    width: 20vw;
+    height: 100vh;
+    padding: 4vw;
+    justify-self: flex-start;
+}

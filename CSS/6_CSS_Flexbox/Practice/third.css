@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 4vw;
+    padding:2vw;
+}
+img{
+    width: 5vw;
+    padding:2vw;
+    border-radius: 50vh;
+}
