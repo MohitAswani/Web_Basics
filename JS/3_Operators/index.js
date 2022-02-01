@@ -12,3 +12,26 @@ c-=b;
 c/=b;
 c+=2;
 console.log(c);
+
+// Comparision ops
+var x=34;
+var y=69;
+console.log(x==y);
+console.log(x>y);
+console.log(x<=y);
+console.log(x!=y);
+
+// Logical ops
+console.log(true&&true);
+console.log(true&&false);
+console.log(true||false);
+console.log(!true)
+console.log(!false)
+
+// Bitwise ops
+console.log(2|3)
+console.log(2&3)
+console.log(!0)    // true
+console.log(!69)  // false
+
+ 
