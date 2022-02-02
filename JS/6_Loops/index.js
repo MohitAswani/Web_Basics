@@ -8,7 +8,7 @@ for (var i = 0; i < arr.length; i++) {
     console.log(arr[i]);
 }
 
-// for each is a good method to iterate though an array
+// for each is a good method to iterate though an array. For each takes a function as an argument.
 
 arr.forEach(function (element) {
     console.log(element);
