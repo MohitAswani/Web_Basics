@@ -24,3 +24,7 @@ console.log(arr.toString());
 let brr=[1,56,12,34,1,4,2];
 console.log(brr.sort())  // sort the numbers alphabetically 
 
+console.log(brr.sort(function(a,b){
+    return a-b;
+}))   // to sort the elements numerically we can just pass the compare function in sort method of the array
+ 
