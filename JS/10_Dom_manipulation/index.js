@@ -12,7 +12,9 @@ console.log(elemClass);
 
 elemClass[0].classList.add("bg-primary"); // we can add another css class ot its class list.
 
-elemClass[0].classList.add("text-success"); // elemClass[0].classList.remove("text-success"); we can also remove class from classList
+elemClass[0].classList.add("text-success"); 
+
+// elemClass[0].classList.remove("text-success"); we can also remove class from classList
 
 console.log(elemClass[0].innerHTML); // gives the HTML written inside the element
 

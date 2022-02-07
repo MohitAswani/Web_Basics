@@ -39,7 +39,7 @@ console.log(und)
 console.log(u)
 
 // Null
-var nul=null  // undefined is different from null and undefined is when a variable is not defined and null is when a varialbe contains nothing
+var nul=null  // undefined is different from null and undefined is when a variable is not defined and null is when a variable contains nothing
 
 console.log(nul)
 console.log(null)
