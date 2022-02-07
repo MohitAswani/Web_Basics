@@ -8,6 +8,8 @@ localStorage.setItem('name','Mohit')   // used to store data
 
 console.log(localStorage.getItem('name'))  // used to retrieve data
 
+localStorage.removeItem('name')  // used to remove a particular item.
+
 console.log(localStorage)
 
 localStorage.clear()   // used to clear data
