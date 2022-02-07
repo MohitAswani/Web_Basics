@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 2px solid red;
+    margin: 2vh;
+    padding: 1vh;
+    background: hsl(180, 100%, 50%);
+}
+.bg-primary{
+    background-color: blueviolet;
+}
+.text-success{
+    color:white;
+}
+h1{
+    margin: 2vh;
+    padding: 1vh;
+}
