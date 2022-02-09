@@ -42,13 +42,13 @@ The background-attachment CSS property sets whether a background image's positio
 
 */
 .container{
-    width: 400px;
-    height: 400px;
+    width: 1000px;
+    height: 1000px;
     border:10px solid blue;
     color: white;
     background-image: url("img2.jpg");
     background-repeat: no-repeat;
-    background-size:500px;
+    background-size:auto;
     /* background-position: top left; */
     background-attachment:fixed;
 }

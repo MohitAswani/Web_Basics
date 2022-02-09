@@ -25,13 +25,10 @@ text-align property is used to set the horizontal alignment of the text in eleme
     height: 300px;
     background-color: red;
     display: inline-block;
-    /* visibility: collapse; */
-    text-align: center;
 }
 .box2{
     width: 400px;
     height: 300px;
     background-color: blue;
     display: inline-block;
-    text-align: right;
 }
