@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: red;
+}
+/*
+We use media-queries when we want to make responsive websites.
+
+Media queries are used to trigger a change in css when a event is triggered.
+
+The below media query will set the background-color of container to yellow.
+*/
+@media screen and (max-width: 800px){
+    .container{
+        background-color: yellow;
+    }
+}
